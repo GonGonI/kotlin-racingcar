@@ -1,16 +1,24 @@
-apply plugin: 'java'
-apply plugin: 'eclipse'
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.9.24'
+    id 'org.jetbrains.kotlin.plugin.spring' version '1.9.24'
+}
 
 version = '1.0.0'
-sourceCompatibility = 1.8
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testCompile('org.junit.jupiter:junit-jupiter:5.4.2')
-    testCompile('org.assertj:assertj-core:3.11.1')
+    implementation 'org.jetbrains.kotlin:kotlin-reflect'
+    testImplementation 'org.jetbrains.kotlin:kotlin-test-junit5'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
 test {
