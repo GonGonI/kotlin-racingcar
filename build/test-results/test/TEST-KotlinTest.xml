@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="KotlinTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-07-08T04:25:20" hostname="Ryanui-MacBookAir.local" time="0.016">
-  <properties/>
-  <testcase name="test3()" classname="KotlinTest" time="0.016"/>
-  <system-out><![CDATA[c
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
